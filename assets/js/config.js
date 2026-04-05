@@ -1,13 +1,13 @@
 export const testimonials = [
   {
     name: "10i",
-    avatar: "/assets/img/avatars/10i.png",
+    avatar: "./assets/img/avatars/10i.png",
     profile: "",
     review: "uhh"
   },
   {
     name: "EpicE",
-    avatar: "/assets/img/avatars/epice.png",
+    avatar: "./assets/img/avatars/epice.png",
     profile: "",
     review: "testfrfrfr"
   }
