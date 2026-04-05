@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./assets/img/favicon_io/site.webmanifest">
+
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <title>Ayansh | Portfolio</title>
+</head>
+
+<body>
+
+  <header id="header" class="header transHead">
+    <nav class="nav container">
+      <a class="nav_logo" href="#">Ayansh</a>
+
+      <div class="nav_menu">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a class="nav_link active-link" href="#home">
+              <i class="bx bx-home-alt"></i>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#about">
+              <i class="bx bx-user"></i>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#skills">
+              <i class="bx bx-trophy"></i>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#work">
+              <i class="bx bx-briefcase-alt"></i>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#contact">
+              <i class="bx bx-message-square"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <i id="theme-button" class="bx bx-moon change-theme"></i>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="home" class="home">
+      <div class="home_container container grid">
+        <div class="home_data">
+          <span class="home_greeting">Hello, I'm</span>
+          <h1 class="home_name">Ayansh</h1>
+          <h3 class="home_education">FullStack Developer</h3>
+
+          <div class="home_buttons">
+            <a class="button" href="#about">About me</a>
+          </div>
+        </div>
+
+        <div class="home_social">
+          <a class="home_social-link" href="https://github.com/iconicayansh-dev" target="_blank">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a class="home_social-link" href="mailto:mail@ayansh.xyz" target="_blank">
+            <i class="bx bxl-gmail"></i>
+          </a>
+          <a class="home_social-link" href="https://discord.com/users/1421877908456083578" target="_blank">
+            <i class="bx bxl-discord"></i>
+          </a>
+        </div>
+
+        <a class="home_scroll" href="#work">
+          <i class="bx bx-mouse home_scroll-icon"></i>
+          <span class="home_scroll-name">Scroll Down</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="work" class="work section">
+      <span class="section_subtitle">My Portfolio</span>
+      <h2 class="section_title">Recent Works</h2>
+
+      <div class="work_filters">
+        <span class="work_item active-work" data-filter="all">All</span>
+        <span class="work_item" data-filter=".web">Web</span>
+        <span class="work_item" data-filter=".discord">Discord</span>
+      </div>
+
+      <div class="work_container container grid"></div>
+    </section>
+
+    <section id="testimonial" class="testimonial section">
+      <span class="section_subtitle">My clients say</span>
+      <h2 class="section_title">Testimonial</h2>
+
+      <div class="testimonial_container container swiper">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <span class="section_subtitle">Get in touch</span>
+      <h2 class="section_title">Contact Me</h2>
+
+      <div class="contact_container container grid">
+        <div class="contact_content">
+          <h3 class="contact_title">Talk to me</h3>
+
+          <div class="contact_info">
+            <div class="contact_card">
+              <i class="bx bx-mail-send contact_card-icon"></i>
+              <h3 class="contact_card-title">Email</h3>
+              <span class="contact_card-data">mail@ayansh.xyz</span>
+              <a class="contact_button" href="mailto:mail@ayansh.xyz" target="_blank">
+                write me <i class="bx bx-right-arrow-alt contact_button-icon"></i>
+              </a>
+            </div>
+
+            <div class="contact_card">
+              <i class="bx bxl-discord contact_card-icon"></i>
+              <h3 class="contact_card-title">Discord</h3>
+              <span class="contact_card-data">(Mostly active)</span>
+              <a class="contact_button" href="https://discord.com/users/1421877908456083578" target="_blank">
+                write me <i class="bx bx-right-arrow-alt contact_button-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact_content">
+          <h3 class="contact_title">Write me your thoughts</h3>
+
+          <form class="contact_form">
+            <div class="contact_form-div">
+              <label class="contact_form-tag">Name</label>
+              <input class="contact_form-input" type="text" placeholder="Insert your name">
+            </div>
+
+            <div class="contact_form-div">
+              <label class="contact_form-tag">Mail</label>
+              <input class="contact_form-input" type="email" placeholder="Insert your email">
+            </div>
+
+            <div class="contact_form-div contact_form-area">
+              <label class="contact_form-tag">Message</label>
+              <textarea class="contact_form-input" cols="30" rows="10" placeholder="Write your message"></textarea>
+            </div>
+
+            <button class="button" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer_container container">
+      <h1 class="footer_title">Ayansh</h1>
+
+      <ul class="footer_list">
+        <li><a class="footer_link" href="#about">About</a></li>
+        <li><a class="footer_link" href="#work">Projects</a></li>
+        <li><a class="footer_link" href="#testimonial">Testimonial</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./assets/js/scrollreveal.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/mixitup.min.js"></script>
+  <script type="module" src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
