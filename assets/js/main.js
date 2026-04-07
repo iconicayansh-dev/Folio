@@ -1,6 +1,5 @@
 import { works, testimonials } from './config.js'
 document.addEventListener('DOMContentLoaded', () => {
-
   /*=============== RENDER WORKS ===============*/
   const workContainer = document.querySelector('.work_container')
 
@@ -158,5 +157,4 @@ document.addEventListener('DOMContentLoaded', () => {
     sr.reveal(`.work_card`, { origin: 'left', distance: '60px' })
     sr.reveal(`.section_subtitle, .section_title`, { distance: '0px' })
   }
-
 })
