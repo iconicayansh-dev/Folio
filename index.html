@@ -9,10 +9,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon_io/favicon-16x16.png">
   <link rel="manifest" href="./assets/img/favicon_io/site.webmanifest">
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./assets/css/styles.css">
+<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.10/dist/dotlottie-wc.js" type="module"></script>
 
   <title>Ayansh | Portfolio</title>
 </head>
@@ -31,18 +31,13 @@
             </a>
           </li>
           <li class="nav_item">
-            <a class="nav_link" href="#about">
-              <i class="bx bx-user"></i>
-            </a>
-          </li>
-          <li class="nav_item">
-            <a class="nav_link" href="#skills">
-              <i class="bx bx-trophy"></i>
-            </a>
-          </li>
-          <li class="nav_item">
             <a class="nav_link" href="#work">
               <i class="bx bx-briefcase-alt"></i>
+            </a>
+          </li>
+                    <li class="nav_item">
+            <a class="nav_link" href="#testimonial">
+              <i class="bx bx-user"></i>
             </a>
           </li>
           <li class="nav_item">
@@ -52,7 +47,6 @@
           </li>
         </ul>
       </div>
-
       <i id="theme-button" class="bx bx-moon change-theme"></i>
     </nav>
   </header>
@@ -60,9 +54,6 @@
   <main>
 
     <section id="home" class="home">
-      <div class="lottie-bg">
-    <canvas id="canvas"></canvas>
-  </div>
       <div class="home_container container grid">
         <div class="home_data">
           <span class="home_greeting">Hello, I'm</span>
@@ -73,7 +64,7 @@
             <a class="button" href="#about">About me</a>
           </div>
         </div>
-
+        <dotlottie-wc src="https://lottie.host/983ae54a-dde8-47b9-9e8f-7da2dd960029/ZoAAMa0Iwr.lottie" style="width: 500px;height: 500px" autoplay loop></dotlottie-wc>
         <div class="home_social">
           <a class="home_social-link" href="https://github.com/iconicayansh-dev" target="_blank">
             <i class="bx bxl-github"></i>
@@ -85,7 +76,6 @@
             <i class="bx bxl-discord"></i>
           </a>
         </div>
-
         <a class="home_scroll" href="#work">
           <i class="bx bx-mouse home_scroll-icon"></i>
           <span class="home_scroll-name">Scroll Down</span>

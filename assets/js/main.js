@@ -1,6 +1,5 @@
 import { works, testimonials } from './config.js'
 document.addEventListener('DOMContentLoaded', () => {
-  /*=============== RENDER WORKS ===============*/
   const workContainer = document.querySelector('.work_container')
 
   if (workContainer) {
@@ -24,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     workContainer.insertAdjacentHTML('beforeend', worksHTML)
   }
 
-  /*=============== RENDER TESTIMONIALS ===============*/
   const swiperWrapper = document.querySelector('.testimonial_container .swiper-wrapper')
 
   if (swiperWrapper && window.Swiper) {
@@ -61,7 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  /*=============== MIXITUP ===============*/
   if (window.mixitup && document.querySelector('.work_container')) {
     mixitup('.work_container', {
       selectors: { target: '.work_card' },
@@ -69,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  /*=============== ACTIVE WORK FILTER ===============*/
   const linkwork = document.querySelectorAll('.work_item')
 
   linkwork.forEach(l => {
@@ -79,7 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 
-  /*=============== SCROLL HEADER ===============*/
   window.addEventListener('scroll', () => {
     const header = document.getElementById('header')
     if (!header) return
@@ -93,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-  /*=============== ACTIVE SECTION LINK ===============*/
   const sections = document.querySelectorAll('section[id]')
 
   window.addEventListener('scroll', () => {
@@ -115,7 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 
-  /*=============== THEME ===============*/
   const themeButton = document.getElementById('theme-button')
   const lightTheme = 'light-theme'
   const iconTheme = 'bx-sun'
@@ -143,7 +136,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  /*=============== SCROLL REVEAL ===============*/
   if (window.ScrollReveal) {
     const sr = ScrollReveal({
       distance: '100px',
